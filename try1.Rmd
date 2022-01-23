@@ -1,0 +1,13 @@
+
+
+```{r}
+link="https://github.com/SamHenkels47/sam3/raw/main/R23.xlsx"
+library(rio)
+mydata=import(link)
+```
+
+```{r}
+library(ggplot2)
+base=ggplot(data=mydata,aes(x=Country,y=ANNUAL 2020 ))
+base+geom_bar(stat="identity")
+```
